@@ -112,3 +112,23 @@ Feel free to submit issues, fork the repository, and create pull requests for an
 ## License
 
 This example is part of the Steel Cookbook and is licensed under the MIT License. See the LICENSE file for details.
+
+## Real-Time Agent Visualization Dashboard
+
+A React dashboard is included in the `dashboard/` directory. It connects to the agent's WebSocket server and visualizes tokens, meta info, and agent status in real time. You can also send new tasks or questions to the agent from the dashboard UI.
+
+### To run the dashboard:
+
+1. Open a new terminal and navigate to the dashboard directory:
+   ```bash
+   cd dashboard
+   npm install
+   npm start
+   ```
+   This will start the dashboard at http://localhost:3000
+
+2. Make sure the Python agent is running (see above). The dashboard will connect to the agent's WebSocket server at ws://localhost:8000.
+
+3. Use the dashboard UI to view discovered tokens, agent status, and meta info in real time. You can also set new tasks or ask questions to the agent directly from the dashboard.
+
+---
